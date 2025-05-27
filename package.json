@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test:local": "cross-env NODE_ENV=local npx playwright test",
-    "test:prod": "cross-env NODE_ENV=production npx playwright test"
+    "test:prod": "cross-env NODE_ENV=production npx playwright test",
+    "test:api:prod": "cross-env NODE_ENV=production npx playwright test --project=api"
   },
   "keywords": [],
   "author": "",
