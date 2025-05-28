@@ -6,7 +6,11 @@
   "scripts": {
     "test:local": "cross-env NODE_ENV=local npx playwright test",
     "test:prod": "cross-env NODE_ENV=production npx playwright test",
-    "test:api:prod": "cross-env NODE_ENV=production npx playwright test --project=api"
+    "be:prod": "cross-env NODE_ENV=production npx playwright test --project=api",
+    "fe:prod": "cross-env NODE_ENV=production npx playwright test --project=frontend",
+    "fe:prod:headed": "cross-env NODE_ENV=production npx playwright test --project=frontend --headed",
+    "fe:prod:debug": "cross-env NODE_ENV=production npx playwright test --project=frontend --debug",
+    "fe:local:ui": "cross-env NODE_ENV=local npx playwright test --project=frontend --ui"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +21,7 @@
     "cross-env": "^7.0.3"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.8.0",
     "dotenv": "^16.5.0"
   }
 }
